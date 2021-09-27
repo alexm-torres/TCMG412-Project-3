@@ -1,26 +1,29 @@
 import http_access_log.txt
 import requests
 
-with open('topsites.txt') as my_file:
-    array=my_file.readlines()
+with open("http_access_log.txt") as file_in:
+    array = []
+    for line in file_in:
+        array.append(line)
 
 for i in array:
-    if array[i].find("Apr") != -1 and array[i].find("1995") != -1:
-        array[i].append("4")
-    else if array[i].find("May") != -1 and array[i].find("1995") != -1:
-        array[i].append("5")
-    else if array[i].find("Jun") != -1 and array[i].find("1995") != -1:
-        array[i].append("6")
-    else if array[i].find("Jul") != -1 and array[i].find("1995") != -1:
-        array[i].append("7")
-    else if array[i].find("Aug") != -1 and array[i].find("1995") != -1:
-        array[i].append("8")
-    else if array[i].find("Sep") != -1 and array[i].find("1995") != -1:
-        array[i].append("9")
-    else if array[i].find("Oct") != -1 and array[i].find("1995") != -1:
-        array[i].append("10")
-    else:
-        array[i] = array[i]
+    print(array)
+#    if array[i].find("Apr") != -1 and array[i].find("1995") != -1:
+ #       array[i].append("4")
+  #  elif array[i].find("May") != -1 and array[i].find("1995") != -1:
+   #     array[i].append("5")
+    #elif array[i].find("Jun") != -1 and array[i].find("1995") != -1:
+     #   array[i].append("6")
+    #elif array[i].find("Jul") != -1 and array[i].find("1995") != -1:
+     #   array[i].append("7")
+    #elif array[i].find("Aug") != -1 and array[i].find("1995") != -1:
+     #   array[i].append("8")
+    #elif array[i].find("Sep") != -1 and array[i].find("1995") != -1:
+     #   array[i].append("9")
+    #elif array[i].find("Oct") != -1 and array[i].find("1995") != -1:
+     #   array[i].append("10")
+    #else:
+     #   array[i] = array[i]
 
 countsix = 0
 countall = len(array)
