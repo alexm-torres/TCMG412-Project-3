@@ -7,7 +7,7 @@ with open("http_access_log.txt") as file_in:
         array.append(line)
 
 for i in array:
-    print(array)
+    print(array[i])
 #    if array[i].find("Apr") != -1 and array[i].find("1995") != -1:
  #       array[i].append("4")
   #  elif array[i].find("May") != -1 and array[i].find("1995") != -1:
@@ -35,4 +35,4 @@ for i in array:
 
 
 print("Total Number of Requests in the past six months: ", countsix)
-print("Total Number of Requests: ", countall)
+print("Total Number of Requests: ", countall) 
