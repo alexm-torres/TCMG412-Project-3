@@ -5,19 +5,19 @@ with open('topsites.txt') as my_file:
     array=my_file.readlines()
 
 for i in array:
-    if array[i].find("Apr") != -1 && array[i].find("1995") != -1:
+    if array[i].find("Apr") != -1 and array[i].find("1995") != -1:
         array[i].append("4")
-    else if array[i].find("May") != -1 && array[i].find("1995") != -1:
+    else if array[i].find("May") != -1 and array[i].find("1995") != -1:
         array[i].append("5")
-    else if array[i].find("Jun") != -1 && array[i].find("1995") != -1:
+    else if array[i].find("Jun") != -1 and array[i].find("1995") != -1:
         array[i].append("6")
-    else if array[i].find("Jul") != -1 && array[i].find("1995") != -1:
+    else if array[i].find("Jul") != -1 and array[i].find("1995") != -1:
         array[i].append("7")
-    else if array[i].find("Aug") != -1 && array[i].find("1995") != -1:
+    else if array[i].find("Aug") != -1 and array[i].find("1995") != -1:
         array[i].append("8")
-    else if array[i].find("Sep") != -1 && array[i].find("1995") != -1:
+    else if array[i].find("Sep") != -1 and array[i].find("1995") != -1:
         array[i].append("9")
-    else if array[i].find("Oct") != -1 && array[i].find("1995") != -1:
+    else if array[i].find("Oct") != -1 and array[i].find("1995") != -1:
         array[i].append("10")
     else:
         array[i] = array[i]
